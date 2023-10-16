@@ -1,6 +1,10 @@
 import cv2
 import streamlit as st
 from PIL import Image
+
+
+
+
 def detect_faces(image):
     face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
 
