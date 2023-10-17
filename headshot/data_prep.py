@@ -5,12 +5,15 @@ from datasets import load_dataset
 
 data_url = ''
 
+datas = None
+labels = None
+
 class FaceDataset(Dataset):
-    def __init__(self,data,labels):
+    def __init__(self):
         self.tranforms = transforms.Compose([
 
         ])
-        self.data = data
+        self.data = datas
         self.labels = labels
 
     def __len__(self):

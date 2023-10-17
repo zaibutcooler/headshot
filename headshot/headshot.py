@@ -1,11 +1,11 @@
 import torch
 from torch import nn
-from data_prep import FaceDataset
+from .data_prep import FaceDataset
 
 class Headshot(nn.Module):
     def __init__(self,num_epoch=20,lr=0.02):
         super().__init__()
-        self.dataset = FaceDataset()
+        # self.dataset = FaceDataset()
         self.num_epoch = num_epoch
         self.lr = lr
         self.device = 'cuda' if torch.cuda.is_available() else 'cpu'
