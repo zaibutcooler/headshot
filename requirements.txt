@@ -1,0 +1,4 @@
+torch
+streamlit
+opencv-python
+numpy
