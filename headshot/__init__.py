@@ -1,2 +1,1 @@
-from headshot.headshot import Headshot
-from .config import Config
+from headshot.model import Model
